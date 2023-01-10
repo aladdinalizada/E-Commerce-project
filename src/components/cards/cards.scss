@@ -1,0 +1,52 @@
+.cardContainer {
+  width: 100%;
+  display: flex;
+  margin: 22px 0px;
+  .card {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    i {
+      font-size: 55px;
+      &:hover {
+        -webkit-animation: slide-fwd-center 0.45s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          both;
+        @-webkit-keyframes slide-fwd-center {
+          0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+          }
+          100% {
+            -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+          }
+        }
+        @keyframes slide-fwd-center {
+          0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+          }
+          100% {
+            -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+          }
+        }
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      h3 {
+        margin: 0;
+      }
+      p {
+        color: #878787;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -70,7 +70,6 @@
         display: flex;
         align-items: center;
         column-gap: 15px;
-        transition: 1s;
         .fa-facebook-f:hover {
           color: blue;
         }
@@ -110,6 +109,14 @@
           }
         }
       }
+    }
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .topHeader {
+    justify-content: center;
+    .topHeaderleftBox {
+      display: none;
     }
   }
 }

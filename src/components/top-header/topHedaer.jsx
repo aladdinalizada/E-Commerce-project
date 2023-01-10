@@ -1,5 +1,7 @@
 import React from "react";
 import "./topHeader.scss";
+// import image from "../../assets/images/usaflag.png";
+
 const TopHedaer = () => {
   return (
     <div>
@@ -29,7 +31,10 @@ const TopHedaer = () => {
               <option value="arabic">عربي</option>
             </select>
             <select name="currency" id="currency">
-              <option value="usd">USD</option>
+              <option value="usd">
+                USD
+                {/* <img src={image} alt="usaflag" /> */}
+              </option>
               <option value="koreawon">KRW</option>
               <option value="euro">EUR</option>
             </select>
