@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../cards/customer-service.png";
+// import image from "../cards/customer-service.png";
 import "./cards.scss";
 
 const CardsPropation = () => {
