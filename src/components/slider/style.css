@@ -1,0 +1,134 @@
+:root {
+  --hover-color: rgb(14, 193, 173) ;
+}
+.each-slide-effect > div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    background-size: cover;
+    height: 350px;
+    width: 32%;
+  } 
+  .each-slide-effect span {
+    padding: 11px;
+    font-size: 20px;
+    background: white;
+    text-align: center;
+    width: 80%;
+  }
+.each-slide-effect{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.each-slide-effect:hover{
+  cursor: pointer;
+}
+/* button{
+  border: 0;
+  margin: 20px;
+  padding: 15px 50px;
+  
+} */
+.viewAllBtn button {
+  border: 0;
+  /* margin: 20px; */
+  text-transform: uppercase;
+  /* font-size: 20px; */
+  font-weight: bold;
+  padding: 15px 50px;
+  color: black;
+  outline: none;
+  position: relative;
+  background-color: white;
+   border: 1px solid black;
+}
+
+.viewAllBtn button:before{
+  content: '';
+  display: block;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgb(14, 193, 173) 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right:0;
+  left: 0;
+  transition: all 1s;color: white;
+  -webkit-transition: all 1s;
+}
+
+
+.viewAllBtn .green:hover:before {
+  background-position: left bottom;
+}
+.shopByCategory{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+.shopByCategory > div{
+  width: 70%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shopByCategory .textContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shopByCategory .textContainer .title{
+  width: 50%;
+}
+.shopByCategory .textContainer h3{
+  font-size: 50px;
+  margin: 0;
+  font-weight: bold;
+  color: #858585;
+}
+.shopByCategory .textContainer h3 span{
+  color: black;
+}
+.shopByCategory .viewAllBtn{
+  margin-top: 20px;
+}
+@media only screen and (max-width: 1020px) {
+  .each-slide-effect > div {
+    width: 100%;
+  }
+  .shopByCategory{
+    flex-direction: column;
+    margin-top: 0px;
+
+  }
+  .shopByCategory > div{
+    width: 100%;
+    margin-top: 0;
+  }
+  .shopByCategory .textContainer{
+    display: inline-block;
+    height: 75px;
+  }
+  .shopByCategory .textContainer .title{
+    width: 100%;
+    height: 20px;
+  }
+  .shopByCategory .viewAllBtn{
+    margin-top: 20px;
+    display: none;
+  }
+  .shopByCategory .textContainer h3 {
+display: flex;
+justify-content: start; 
+column-gap: 20px;
+}
+}
+  

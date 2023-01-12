@@ -1,6 +1,7 @@
 import "./App.css";
 import CardsPropation from "./components/cards/cards";
 import Hero from "./components/introduction/hero";
+import CategorySlider from "./components/slider";
 import TopHedaer from "./components/top-header/topHedaer";
 import Header from "./layouts/header/header";
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Hero />
       <CardsPropation />
+      <CategorySlider/>
     </div>
   );
 }
