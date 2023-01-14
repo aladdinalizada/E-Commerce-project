@@ -1,20 +1,76 @@
-.footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-items: baseline;
-    li{
-        list-style-type: none;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: baseline;
+  li {
+    list-style-type: none;
+  }
+  .head {
+    font-size: x-large;
+  }
+  .unsenLogo {
+    width: 25%;
+    img {
+      width: 100%;
     }
-    .head{
-        font-size: x-large;
+    .location {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      li {
+        margin: 0;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        border-radius: 50%;
+        i {
+          padding: 20px;
+          font-size: x-large;
+        }
+      }
     }
-    .unsenLogo{
-        width: 25%;
-        img{
-            width: 100%;
+  }
+  .services {
+    .body {
+      ul {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        row-gap: 8px;
+        li{
+            font-size: large;
+        }
+      }
+    }
+  }
+  .storeis {
+      .body {
+        margin-left: 0;
+      ul {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        row-gap: 8px;
+        li{
+            font-size: large;
+        }
+      }
+    }
+  }
+  .stayConnected{
+    width: 25%;
+    .body{
+        display: flex;
+        width: 100%;
+        input{
+            border: 1px solid black;
         }
     }
+  }
 }
