@@ -1,6 +1,9 @@
 :root {
   --hover-color: rgb(14, 193, 173) ;
 }
+.shopByCategory{
+  margin: 33px 0px;  
+}
 .each-slide-effect > div {
     display: flex;
     align-items: flex-end;
@@ -24,17 +27,10 @@
 .each-slide-effect:hover{
   cursor: pointer;
 }
-/* button{
-  border: 0;
-  margin: 20px;
-  padding: 15px 50px;
-  
-} */
+
 .viewAllBtn button {
   border: 0;
-  /* margin: 20px; */
   text-transform: uppercase;
-  /* font-size: 20px; */
   font-weight: bold;
   padding: 15px 50px;
   color: black;
@@ -99,6 +95,15 @@
 }
 .shopByCategory .viewAllBtn{
   margin-top: 20px;
+}
+.shopByCategory .default-nav{
+  transition: 0.5s;
+}
+.shopByCategory .default-nav:hover{
+  background-color: var(--hover-color);
+}
+.shopByCategory svg:hover{
+  fill: white;
 }
 @media only screen and (max-width: 1020px) {
   .each-slide-effect > div {
