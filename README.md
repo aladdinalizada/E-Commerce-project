@@ -8,11 +8,12 @@ Applications built with Pimcore.
 
 ## Getting started 
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/demo-ecommerce my-project
-cd ./my-project
-./vendor/bin/pimcore-install
+git clone https://github.com/aladdinalizada/E-Commerce.git
+cd project
+npm install
+npm run dev
 ```
 
-- Point your virtual host to `my-project/web` 
-- Open https://your-host/admin in your browser
+- Point your virtual host to `LocalHost` 
+- Open https://loaclhost:3000 in your browser
 - Done! 😎
