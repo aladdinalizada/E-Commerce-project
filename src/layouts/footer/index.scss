@@ -1,0 +1,20 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: baseline;
+    li{
+        list-style-type: none;
+    }
+    .head{
+        font-size: x-large;
+    }
+    .unsenLogo{
+        width: 25%;
+        img{
+            width: 100%;
+        }
+    }
+}

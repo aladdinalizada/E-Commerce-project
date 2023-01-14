@@ -50,3 +50,12 @@
     }
   }
 }
+@media only screen and (max-width: 1020px) {
+  .countdownContainer {
+    justify-content: center;
+    justify-content: center;
+    .countdown-wrapper{
+      padding-right: 0;
+    }
+  }
+}

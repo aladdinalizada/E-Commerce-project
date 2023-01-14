@@ -1,0 +1,105 @@
+.topProducts {
+  margin-top: 40px;
+  margin-bottom: 41px;
+  .topProductsHead {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+    .left {
+      padding-left: 20px;
+      h4 {
+        margin: 0;
+        font-size: xx-large;
+        color: #858585;
+      }
+      h4:last-child{
+        color: black;
+      }
+      
+    }
+    li{
+      transition: 1s;
+      cursor: pointer;
+    }
+    li:hover{
+      transition: 0.5s;
+      text-decoration: underline;
+    }
+    .right {
+      ul {
+        display: flex;
+        column-gap: 10px;
+        list-style: none;
+        li {
+          font-size: large;
+          &.active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .topProductsbody {
+    .cards {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      column-gap: 20px;
+      .card {
+        width: 15%;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        img:hover {
+          transition: 1s;
+          transform: scale(0.9);
+        }
+        position: relative;
+        .addtoFavorite {
+          position: absolute;
+          top: 0;
+          left: 90%;
+          background-color: white;
+          border: 1px solid black;
+          padding: 5px;
+          border-radius: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: rgb(61, 61, 61);
+            color: white;
+            i {
+              transition: 1s;
+              transform: scale(1.1);
+            }
+          }
+        }
+        
+      }
+    }
+    .viewAll{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button{
+            background-color: transparent;
+            padding: 10px 25px;
+            a{
+                text-decoration: none;
+            }
+            &:hover{
+                background-color: green;
+                transition: 0.3s;
+                transform: scale(1.01);
+                a{
+                    transition: 0.3s;
+                    color: white;
+                }
+            }
+        }
+    }
+  }
+}
