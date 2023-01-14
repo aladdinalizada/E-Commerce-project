@@ -12,7 +12,7 @@ npm install
 npm run dev
 ```
 ## Technology
-/ Front End : React, redux, Reaxt-redux
+/ Front End : React, redux, Reaxt-redux, React-router-DOM
 <br/>
 /Back-end : Express.js
 - Point your virtual host to `LocalHost` 
