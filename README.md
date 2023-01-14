@@ -13,6 +13,7 @@ npm run dev
 ```
 ## Technology
 / Front End : React, redux, Reaxt-redux
+<br/>
 /Back-end : Express.js
 - Point your virtual host to `LocalHost` 
 - Open https://loaclhost:3000 in your browser
