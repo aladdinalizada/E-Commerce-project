@@ -1,6 +1,9 @@
 import React from "react";
 import "./header.scss";
 const Header = () => {
+  const handleFavorite = () => {
+    
+  };
   return (
     <div>
       <div className="header">
@@ -63,7 +66,7 @@ const Header = () => {
           </div>
           <div className="favoirites">
             <button>
-              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-heart" onClick={() => handleFavorite()}></i>
             </button>
             <span className="favoiritesCount">0</span>
           </div>

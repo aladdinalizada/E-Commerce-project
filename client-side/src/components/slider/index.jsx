@@ -30,35 +30,35 @@ const CategorySlider = () => {
         <Slide>
           <div className="each-slide-effect">
             <div style={{ backgroundImage: `url(${images[0]})` }}>
-              <span>Slide 1</span>
+              <span>Women</span>
             </div>
             <div style={{ backgroundImage: `url(${images[1]})` }}>
-              <span>Slide 2</span>
+              <span>Jewelery</span>
             </div>
             <div style={{ backgroundImage: `url(${images[2]})` }}>
-              <span>Slide 3</span>
+              <span>Accessories</span>
             </div>
           </div>
           <div className="each-slide-effect">
             <div style={{ backgroundImage: `url(${images[3]})` }}>
-              <span>Slide 1</span>
+              <span>Glasses</span>
             </div>
             <div style={{ backgroundImage: `url(${images[4]})` }}>
-              <span>Slide 2</span>
+              <span>Women</span>
             </div>
             <div style={{ backgroundImage: `url(${images[5]})` }}>
-              <span>Slide 3</span>
+              <span>Men</span>
             </div>
           </div>
           <div className="each-slide-effect">
             <div style={{ backgroundImage: `url(${images[6]})` }}>
-              <span>Slide 1</span>
+              <span>Jacket</span>
             </div>
             <div style={{ backgroundImage: `url(${images[7]})` }}>
-              <span>Slide 2</span>
+              <span>Women</span>
             </div>
             <div style={{ backgroundImage: `url(${images[8]})` }}>
-              <span>Slide 3</span>
+              <span>Jewelery</span>
             </div>
           </div>
         </Slide>

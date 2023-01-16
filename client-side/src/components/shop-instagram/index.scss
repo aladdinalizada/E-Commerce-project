@@ -2,6 +2,30 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid black;
+  button {
+    svg {
+      display: none;
+      // &:hover {
+      //   display: block;
+      // }
+    }
+  }
+  button.nav.default-nav {
+    display: none;
+    // &:hover {
+    //   display: block;
+    // }
+  }
+  .sliderBody {
+    &:hover {
+      button.nav.default-nav {
+        display: block;
+      }
+      svg {
+        display: block;
+      }
+    }
+  }
   .title {
     display: flex;
     width: 100%;
@@ -17,7 +41,6 @@
     }
     h3:last-child {
       color: black;
-      // font-size: xx-large;
     }
     p {
       margin: 0;
@@ -34,4 +57,27 @@
 }
 
 @media only screen and (max-width: 1020px) {
+  .ShopInstagram {
+    .sliderBody {
+      button.nav.default-nav {
+        display: block;
+      }
+      svg {
+        display: block;
+      }
+    }
+    .title {
+      flex-direction: column;
+      row-gap: 20px;
+      .titleLeft {
+        padding-left: 0;
+        display: flex;
+        column-gap: 5%;
+      }
+      .titleRight {
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+  }
 }

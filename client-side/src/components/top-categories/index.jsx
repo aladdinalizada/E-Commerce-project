@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 // import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import { increment } from "../../redux/slice/addTiFavorite";
 import "./index.scss";
 const TopProducts = () => {
@@ -27,9 +27,15 @@ const TopProducts = () => {
   // const count = useSelector((state) => state.counter);
   // const dispatch = useDispatch();
   // handle Add to Favorite
-  const handleAddToFavorite = (elem) => {
-    // dispatch(increment())
-    console.log(elem);
+  const handleAddToFavorite = (e) => {
+    // dispatch(increment());
+    // console.log(e.target.parentElement.parentElement.id);
+    // console.log(data);
+    let id = e.target.parentElement.parentElement.id;
+    // console.log(id);
+    console.log(data[id - 1]);
+    let favorite = data[id - 1];
+    localStorage.setItem("favorite", JSON.stringify(favorite));
   };
   return (
     <div>
@@ -53,11 +59,11 @@ const TopProducts = () => {
           <div className="cards">
             {data.slice(0, 4).map((elem) => {
               return (
-                <div className="card" key={elem.id}>
+                <div className="card" key={elem.id} id={elem.id}>
                   <div className="addtoFavorite">
                     <i
                       class="fa-regular fa-heart"
-                      onClick={(elem) => handleAddToFavorite(elem)}
+                      onClick={(e) => handleAddToFavorite(e)}
                     ></i>
                   </div>
                   <img src={elem.image} alt={elem.title} />
@@ -71,7 +77,9 @@ const TopProducts = () => {
           </div>
           <div className="viewAll">
             <button>
-              <NavLink to="/details">View All</NavLink>
+              {/* <NavLink to="/details" t>View All</NavLink> */}
+              {/* Naviagte To Details Page */}
+              <Link to="/details">View All</Link>
             </button>
           </div>
         </div>
