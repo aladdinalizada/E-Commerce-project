@@ -1,8 +1,37 @@
-import React from "react";
+import { Modal } from "antd";
+import React, { useState } from "react";
 import "./header.scss";
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const [data, setData] = useState([]);
+  const getData = () => {
+    let favorite = JSON.parse(localStorage.getItem("favorite"));
+    console.log(favorite);
+    setData(favorite);
+    getData();
+  };
+
   const handleFavorite = () => {
-    
+    showModal();
+    const [favData, setFavData] = useState([]);
+    const getFavorite = async () => {
+      let favorite = JSON.parse(localStorage.getItem("favorite"));
+      console.log(favorite);
+      setFavData(favorite);
+    };
+    getFavorite();
+
+    console.log(favData);
   };
   return (
     <div>
@@ -67,6 +96,26 @@ const Header = () => {
           <div className="favoirites">
             <button>
               <i class="fa-solid fa-heart" onClick={() => handleFavorite()}></i>
+              <Modal
+                title="Your Favorite Products"
+                open={isModalOpen}
+                onOk={handleOk}
+                onCancel={handleCancel}
+              >
+                {data.map((item) => {
+                  return (
+                    <div className="favoriteProduct">
+                      <div className="favoriteProductImage">
+                        <img src={item.image} alt="product" />
+                      </div>
+                      <div className="favoriteProductDetails">
+                        <h3>{item.title}</h3>
+                        <p>{item.price}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </Modal>
             </button>
             <span className="favoiritesCount">0</span>
           </div>

@@ -4,6 +4,7 @@ import CardsPropation from "./components/cards/cards";
 import CountdownTimer from "./components/countdown-timer";
 import Hero from "./components/introduction/hero";
 import Details from "./components/product-details";
+import ScrolTop from "./components/scrol-top";
 import ShopInstagram from "./components/shop-instagram";
 import SliderBottom from "./components/silder-bottom";
 import CategorySlider from "./components/slider";
@@ -19,16 +20,17 @@ function App() {
       <Header />
       <Routes>
         <Route to="/" element="homepage"></Route>
-        <Route to="/details" element={<Details/>}></Route>
+        <Route to="/details" element={<Details />}></Route>
       </Routes>
       <Hero />
       <CardsPropation />
-      <CategorySlider/>
-      <SliderBottom/>
-      <TopProducts/>
-      <CountdownTimer/>
-      <ShopInstagram/>
-      <Footer/>
+      <CategorySlider />
+      <SliderBottom />
+      <TopProducts />
+      <CountdownTimer />
+      <ShopInstagram />
+      <Footer />
+      <ScrolTop />
     </div>
   );
 }

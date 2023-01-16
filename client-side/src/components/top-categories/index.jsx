@@ -32,7 +32,7 @@ const TopProducts = () => {
     // console.log(e.target.parentElement.parentElement.id);
     // console.log(data);
     let id = e.target.parentElement.parentElement.id;
-    // console.log(id);
+    console.log(id);
     console.log(data[id - 1]);
     let favorite = data[id - 1];
     localStorage.setItem("favorite", JSON.stringify(favorite));
